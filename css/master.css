@@ -11,14 +11,14 @@ body{
   margin: auto;
 }
 
-.contenedor1{
+.header{
   background-color: #5b7989;
   color: white;
   border-radius: 10px 10px 0px 0px;
   display: flex;
   flex-direction: row;
 }
-.contenedor1 div{
+.header div{
   width: 50%;
   margin-left: 30px;
   margin-right: 30px;
@@ -30,20 +30,12 @@ body{
   font-size: 180%;
 }
 
-.menu {
+.menu{
   text-align: right;
   word-spacing: 15px;
   font-size: 120%;
   position: relative;
   top: 20px;
-}
-
-.menu a{
-  color: white;
-  text-decoration: underline;
-}
-.menu #index{
-  text-decoration: none;
 }
 
 .contenedor2{
@@ -61,7 +53,7 @@ body{
   width: 100%;
 }
 
-.contenedor4{
+.footer{
   background-color: #C6d5c5;
   border-radius: 0px 0px 10px 10px;
   display: flex;
@@ -69,10 +61,11 @@ body{
   text-align: left;
 }
 
-.contenedor4 div{
-  padding: 10px;
-  margin: 10px;
+.footer div{
+  margin-left: 30px;
+  margin-right: 30px;
   width: 25%;
+  line-height: 15px;
 }
 
 #camara img{
@@ -107,3 +100,32 @@ body{
   width: 10%;
   border-radius: 3px;
 }
+
+/* Pagina paisajes.html
+**************************/
+
+.galeria{
+  background-color: #d5c75f;
+  border: 1px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.galeria div{
+  width: 33.3%;
+}
+.galeria img{
+  width: 70%;
+  margin: 20px;
+}
+.galeria div:first-child{
+  filter: blur(10px);
+}
+.galeria div:nth-child(even){
+  filter: grayscale(100%);
+}
+.galeria div:nth-child(3){
+  filter: sepia(90%);
+}
+
+/* Pagina retratos.html
+**************************/
